@@ -1,6 +1,10 @@
 # Spin up a new multipass vm instance
 multipass launch --name mn-bootstrap -d 8G -m 8G -c 2
 
+# Read out virtual machine IP and save it to the VM
+VMIP=$(multipass info mn-bootstrap | grep IPv4 | grep -Eo '([0-9]*\.){3}[0-9]*')
+multipass exec mn-bootstrap -- bash -c "echo export VMIP=$VMIP >> ~/.evoenv"
+
 # Install dependencies, config vm environment, install mn-bootstrap and config miner and env vars
 multipass exec mn-bootstrap -- bash < ./setup/1-setup-node-npm-docker-compose-mn-boostrap.sh
 

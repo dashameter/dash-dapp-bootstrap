@@ -46,9 +46,10 @@ mn start
 EONG
 
 # SETUP LOCAL DEV VARS
-MYIP=$(ifconfig ens4 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
+source ~/.evoenv
+# MYIP=$(ifconfig ens4 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
 echo "export NUXT_DPNS_CONTRACT_ID=$(mn config:get platform.dpns.contract.id)" >> ~/.evoenv
-echo "export NUXT_DAPIADDRESSES='[\"$MYIP:3000\"]'" >> ~/.evoenv # or your local network ip e.g. 192.168.0.1
+echo "export NUXT_DAPIADDRESSES='[\"$VMIP:3000\"]'" >> ~/.evoenv # or your local network ip e.g. 192.168.0.1
 echo "export NUXT_LOCALNODE=true" >> ~/.evoenv # clientOpts.passFakeAssetLockProofForTests
 echo "export NUXT_MNEMONIC=\"rival estate inside turn journey charge window rhythm marble audit amateur bus\"" >> ~/.evoenv
 # receiving address for 'rival estate ... ySPRMNDVBhZVZvDS4wGn4Ujuq2wP4AcwLK
