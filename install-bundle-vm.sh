@@ -32,7 +32,6 @@ multipass exec mn-bootstrap -- bash < ./setup/5-setup-jembe.sh
 multipass exec mn-bootstrap -- cat .evoenv > ~/.evoenv
 multipass exec mn-bootstrap -- bash < ./launch-jembe.sh
 
-VMIP=$(multipass exec mn-bootstrap -- ifconfig ens4 | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*')
 echo "Autofaucet http://$VMIP:5050/drip/[address]"
 echo "Console http://$VMIP:8080"
 echo "EvoWallet http://$VMIP:3330"
