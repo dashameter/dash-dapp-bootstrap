@@ -18,6 +18,8 @@ node ./scripts/registerContracts.js
 
 source ./env/datacontracts_$NUXT_ENV_RUN.env
 
+npm run register:testuser
+
 echo
 echo "ENV DEV VARS"
 echo

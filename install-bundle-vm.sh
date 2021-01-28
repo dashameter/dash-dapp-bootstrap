@@ -30,7 +30,7 @@ multipass exec mn-bootstrap -- bash < ./launch-evowallet.sh
 
 multipass exec mn-bootstrap -- bash < ./setup/5-setup-jembe.sh
 multipass exec mn-bootstrap -- cat .evoenv > ~/.evoenv
-multipass exec mn-bootstrap -- bash < ./launch-jembe.sh
+multipass exec mn-bootstrap -- bash < ./launch-jembe-loggedin.sh
 
 echo "Autofaucet http://$VMIP:5050/drip/[address]"
 echo "Console http://$VMIP:8080"
