@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "ENV DEV VARS"
 echo ""
 source ~/.evoenv

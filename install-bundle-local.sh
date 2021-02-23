@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Backup ENV DEV VARS
 if [ -f ~/.evoenv ]; then
   mv ~/.evoenv ~/.evoenv_backup$(date --iso-8601=seconds)

@@ -1,0 +1,17 @@
+services:
+    bootstrap:
+        build:
+            args:
+                INSTALL_DIRECTORY: app
+            context: ./
+        container_name: dash-dapp-bootstrap
+        restart: unless-stopped
+        ports:
+            - 3000:3000
+            - 3330:3330
+            - 3331:3331
+            - 5050:5050
+            - 8080:8080
+        privileged: true
+
+version: '3.7'
