@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM ubuntu:bionic
 
-ENV INSTALL_DIRECTORY=app
+ENV INSTALL_DIRECTORY=dash-dapp-bootstrap
 
 RUN apt update \
     && apt install -y git sudo

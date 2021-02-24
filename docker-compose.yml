@@ -1,15 +1,18 @@
 services:
-    bootstrap:
+    dash-dapp-bootstrap:
         build:
             args:
-                INSTALL_DIRECTORY: app
+                INSTALL_DIRECTORY: dash-dapp-bootstrap
             context: ./
         container_name: dash-dapp-bootstrap
         restart: unless-stopped
         ports:
             - 3000:3000
+            - 3001:3001
             - 3330:3330
             - 3331:3331
+            - 3332:3332
+            - 3342:3342
             - 5050:5050
             - 8080:8080
         privileged: true
