@@ -9,6 +9,7 @@ fi
 ./setup/1-setup-node-npm-docker-compose-mn-boostrap.sh
 
 echo "export NUXT_DAPIADDRESSES='[\"127.0.0.1:3000\"]'" >> ~/.evoenv
+echo "export NUXT_INSIGHTAPI='http://127.0.0.1:3001'" >> ~/.evoenv
 
 # Setup and launch autofaucet
 ./setup/2-setup-autofaucet.sh
@@ -30,3 +31,4 @@ echo "Autofaucet http://127.0.0.1:5050/drip/[address]"
 echo "Console http://127.0.0.1:8080"
 echo "EvoWallet http://127.0.0.1:3330"
 echo "Jembe http://127.0.0.1:3331"
+echo "springboard http://127.0.0.1:3332"
