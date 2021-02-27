@@ -1,7 +1,7 @@
 
 # Dash Dapp Bootstrap
 
-Get up an running with local Dash evolution / platform development in an instant. Once installed you will have a running `mn-boostrap` node with a miner configured to feed the [autofaucet](https://github.com/dashameter/dash-dapp-autofaucet). [Console](https://github.com/dashameter/dash-platform-console),[EvoWallet](https://github.com/dashameter/evowallet) and [Jembe](https://github.com/dashameter/jembe) will be up and running at with their data contracts registered and pointing at the local dev node.
+Get up an running with local Dash evolution / platform development in an instant. Once installed you will have a running `mn-boostrap` node with a miner configured to feed the [autofaucet](https://github.com/dashameter/dash-dapp-autofaucet). [Console](https://github.com/dashameter/dash-platform-console),[EvoWallet](https://github.com/dashameter/evowallet) and [Jembe](https://github.com/dashameter/jembe) will be up and running with their data contracts registered and pointing at the local dev node.
 
 ## Run Using Docker Compose
 
