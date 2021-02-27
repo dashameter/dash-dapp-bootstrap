@@ -10,7 +10,7 @@ Get up an running with local Dash evolution / platform development in an instant
 #### Run Using Docker Compose
 
 ```bash
-$ docker-compose up -d
+$ docker-compose -f docker-compose.yml up -d
 $ docker exec -it dash-dapp-bootstrap /bin/bash
 $ ./install-bundle-local.sh
 ```
