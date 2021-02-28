@@ -16,5 +16,9 @@ services:
             - 5050:5050
             - 8080:8080
         privileged: true
+        volumes:
+            - nested:/var/lib/docker
 
 version: '3.7'
+volumes:
+    nested:
