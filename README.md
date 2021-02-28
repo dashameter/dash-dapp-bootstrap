@@ -3,12 +3,11 @@
 
 Get up an running with local Dash evolution / platform development in an instant. Once installed you will have a running `mn-boostrap` node with a miner configured to feed the [autofaucet](https://github.com/dashameter/dash-dapp-autofaucet). [Console](https://github.com/dashameter/dash-platform-console),[EvoWallet](https://github.com/dashameter/evowallet) and [Jembe](https://github.com/dashameter/jembe) will be up and running with their data contracts registered and pointing at the local dev node.
 
-## Run Using Docker Compose
+## Using Docker Compose
 
 [Docker Compose](https://docs.docker.com/compose/install/)
 
-#### Run Using Docker Compose
-
+#### Run
 ```bash
 $ docker-compose -f docker-compose.yml up -d
 $ docker exec -it dash-dapp-bootstrap /bin/bash
@@ -25,7 +24,7 @@ EvoWallet: http://127.0.0.1:3330
 
 Jembe: http://127.0.0.1:3331
 
-## Run Using Multipass
+## Using Multipass
 
 The virtual machine is spun up using [Multipass](https://multipass.run/docs)
 
