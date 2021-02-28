@@ -16,7 +16,7 @@ echo "export NUXT_INSIGHTAPI='http://127.0.0.1:3001'" >> ~/.evoenv
 ./launch-autofaucet.sh
 
 
-#Setup dapps
+# Setup dapps
 ./setup/3-setup-dash-platform-console.sh
 ./setup/4-setup-evowallet.sh
 ./setup/5-setup-jembe.sh
