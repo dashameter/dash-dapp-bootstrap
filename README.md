@@ -3,26 +3,8 @@
 
 Get up an running with local Dash evolution / platform development in an instant. Once installed you will have a running `mn-boostrap` node with a miner configured to feed the [autofaucet](https://github.com/dashameter/dash-dapp-autofaucet). [Console](https://github.com/dashameter/dash-platform-console),[EvoWallet](https://github.com/dashameter/evowallet) and [Jembe](https://github.com/dashameter/jembe) will be up and running with their data contracts registered and pointing at the local dev node.
 
-## Using Docker Compose
+There are two ways to run Dash Dapp Bootstrap inside VM, while both ways should theoretically support all Linux, MacOS and Windows, currentyl the Multipass option is being used successfully on Linux and MacOS and the Docker Compose Option on Windows. You can also install Dash Dapp Bootstrap directly on your host system if you are running Ubuntu.
 
-[Docker Compose](https://docs.docker.com/compose/install/)
-
-#### Run
-```bash
-$ docker-compose -f docker-compose.yml up -d
-$ docker exec -it dash-dapp-bootstrap /bin/bash
-$ ./install-bundle-local.sh
-```
-
-#### Your apps will run at:
-
-Autofaucet: http://127.0.0.1:5050/drip/[address]
-
-Console: http://127.0.0.1:8080
-
-EvoWallet: http://127.0.0.1:3330
-
-Jembe: http://127.0.0.1:3331
 
 ## Using Multipass
 
@@ -43,6 +25,27 @@ Console: http://[VM_IP]:8080
 EvoWallet: http://[VM_IP]:3330
 
 Jembe: http://[VM_IP]:3331
+
+## Using Docker Compose
+
+[Docker Compose](https://docs.docker.com/compose/install/)
+
+#### Run
+```bash
+$ docker-compose -f docker-compose.yml up -d
+$ docker exec -it dash-dapp-bootstrap /bin/bash
+$ ./install-bundle-local.sh
+```
+
+#### Your apps will run at:
+
+Autofaucet: http://127.0.0.1:5050/drip/[address]
+
+Console: http://127.0.0.1:8080
+
+EvoWallet: http://127.0.0.1:3330
+
+Jembe: http://127.0.0.1:3331
 
 
 ## Run Locally ( Without VM )
