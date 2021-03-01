@@ -3,7 +3,7 @@
 
 Get up an running with local Dash evolution / platform development in an instant. Once installed you will have a running `mn-boostrap` node with a miner configured to feed the [autofaucet](https://github.com/dashameter/dash-dapp-autofaucet). [Console](https://github.com/dashameter/dash-platform-console),[EvoWallet](https://github.com/dashameter/evowallet) and [Jembe](https://github.com/dashameter/jembe) will be up and running with their data contracts registered and pointing at the local dev node.
 
-There are two ways to run Dash Dapp Bootstrap inside VM, while both ways should theoretically support all Linux, MacOS and Windows, currentyl the Multipass option is being used successfully on Linux and MacOS and the Docker Compose Option on Windows. You can also install Dash Dapp Bootstrap directly on your host system if you are running Ubuntu.
+There are two ways to run Dash Dapp Bootstrap inside a VM, while both ways should theoretically support all Linux, MacOS and Windows, currently the Multipass option is being used successfully on Linux and MacOS and the Docker Compose Option on Windows. You can also install Dash Dapp Bootstrap directly on your host system if you are running Ubuntu.
 
 
 ## Using Multipass
