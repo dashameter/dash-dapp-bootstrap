@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "ENV DEV VARS"
 echo ""
 source ~/.evoenv
@@ -6,7 +8,6 @@ echo ""
 
 cd dapps
 git clone -b master https://github.com/dashameter/jembe.git
-
 cd jembe
 npm i
 

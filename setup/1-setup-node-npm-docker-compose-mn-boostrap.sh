@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ ! -d dapps ]; then
   mkdir -p dapps;
 fi
@@ -6,12 +8,12 @@ sudo apt-get update
 sudo apt install -y git vim curl net-tools
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
-sudo apt-get install \
+sudo apt-get install -y \
    apt-transport-https \
    ca-certificates \
    curl \
    gnupg-agent \
-   software-properties-common -y
+   software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository \
@@ -19,10 +21,18 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io -y
-sudo docker run hello-world
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+# Fix Permissions
 sudo groupadd docker
-sudo usermod -aG docker $USER
+sudo usermod -a $USER -G docker
+
+# Make Sure Docker Is Running
+sudo service --status-all
+sudo service docker start
+sudo service --status-all
+
+# Setup mn-boostrap
 /usr/bin/newgrp docker <<EONG
 docker run hello-world
 # sudo shutdown -r now # To reevaluate the group permissions
@@ -37,10 +47,11 @@ sudo npm i -g pm2
 git clone -b  master https://github.com/dashevo/mn-bootstrap.git
 cd mn-bootstrap
 npm install
+npm audit fix
 
 sudo npm link
 
-# Setup mn-boostrap 
+# Setup mn-boostrap
 # mn reset
 # mn config:reset
 # docker ps -aq

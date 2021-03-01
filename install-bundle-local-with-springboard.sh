@@ -20,14 +20,17 @@ echo "export NUXT_INSIGHTAPI='http://127.0.0.1:3001'" >> ~/.evoenv
 ./setup/3-setup-dash-platform-console.sh
 ./setup/4-setup-evowallet.sh
 ./setup/5-setup-jembe.sh
+./setup/6-setup-springboard.sh
 
 # Launch dapps
 ./launch-dash-platform-console.sh
 ./launch-evowallet.sh
 ./launch-jembe.sh
+./launch-springboard.sh
 
 
 echo "Autofaucet http://127.0.0.1:5050/drip/[address]"
 echo "Console http://127.0.0.1:8080"
 echo "EvoWallet http://127.0.0.1:3330"
 echo "Jembe http://127.0.0.1:3331"
+echo "springboard http://127.0.0.1:3332"

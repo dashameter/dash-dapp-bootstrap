@@ -6,5 +6,5 @@ source ~/.evoenv
 printenv | grep NUXT
 echo ""
 
-cd dapps/evowallet
-pm2 start npm --name "evowallet" -- run local
+cd dapps/springboard-cash
+pm2 start npm --name "springboard" -- run local
