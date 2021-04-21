@@ -44,8 +44,9 @@ docker-compose --version
 echo "fs.inotify.max_user_watches = 524288" | sudo tee -a /etc/sysctl.conf
 sudo npm i -g pm2
 
-git clone -b  master https://github.com/dashevo/mn-bootstrap.git
+git clone https://github.com/dashevo/mn-bootstrap.git
 cd mn-bootstrap
+git reset --hard a0fb0dd5c4c5b011e4464dda251322d1fa6f40e1
 npm install
 npm audit fix
 
